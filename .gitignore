@@ -1,0 +1,14 @@
+# modules
+node_modules
+
+# Distribution
+dist
+
+# Environment
+.env
+
+# Coverage
+coverage
+
+# Generated
+/src/generated/prisma

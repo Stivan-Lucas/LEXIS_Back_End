@@ -1,0 +1,11 @@
+# modules
+node_modules
+
+# Distribution
+dist
+
+# Coverage
+coverage
+
+# Generated
+/src/generated/prisma
