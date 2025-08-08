@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": [
+    "@tsconfig/node24/tsconfig.json",
+    "@tsconfig/node-ts/tsconfig.json"
+  ],
+  "display": "Node.js 24 + TypeScript (com boas práticas)",
+  "include": ["src", "types", "vitest.config.ts"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "coverage",
+    "src/tests",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ],
+  "compilerOptions": {
+    "rewriteRelativeImportExtensions": true,
+    "noFallthroughCasesInSwitch": true,
+    "types": ["vitest/globals", "node"],
+    "verbatimModuleSyntax": true,
+    "erasableSyntaxOnly": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "rootDir": "./",
+    "outDir": "dist"
+  }
+}
