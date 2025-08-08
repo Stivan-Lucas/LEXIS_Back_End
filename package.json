@@ -24,9 +24,7 @@
     "build": "tsc -p tsconfig.json",
     "prepare": "husky",
     "lint": "eslint --config eslint.config.js . --ext .ts",
-    "lint:fix": "eslint --config eslint.config.js . --ext .ts --fix",
     "format": "prettier . --write",
-    "format:check": "prettier . --check",
     "test": "vitest run --coverage",
     "test:watch": "vitest",
     "coverage": "c8 vitest run"

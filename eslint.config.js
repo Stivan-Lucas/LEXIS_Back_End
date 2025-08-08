@@ -11,13 +11,15 @@ const prettierConfig = JSON.parse(
 
 export default [
   {
+    ignores: ['dist', 'node_modules', 'coverage', 'src/generated/**'],
+  },
+  {
     files: ['**/*.ts'],
     languageOptions: {
       parser,
       parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
-        project: './tsconfig.json', // projeto do tsconfig fica aqui
       },
     },
     plugins: {
@@ -40,6 +42,5 @@ export default [
         },
       ],
     },
-    ignores: ['dist', 'node_modules', 'coverage', 'assets'],
   },
 ];
